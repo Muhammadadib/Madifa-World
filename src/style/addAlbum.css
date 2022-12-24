@@ -1,0 +1,429 @@
+/*header*/
+
+.header-authen{
+    background-color: #FFFFFF;
+    height: 101.67px;
+    left: -10%;
+    right: 0.01%;
+    top: 0px;
+    border-bottom: 0.977597px solid #D9DADC;;
+}
+
+.main-container{
+    position: absolute;
+    width: 439.92px;
+    height: 809.45px;
+    left: 43.6%;
+    top: 100.77px;
+}
+
+h1{
+    position: absolute;
+    top: 70px;
+    width: 439.92px;
+    height: 809.45px;
+    left: 44%;
+}
+.text-top{
+    position: absolute;
+    width: 190.54px;
+    height: 17.6px;
+    left: calc(50% - 190.54px/2 + 0.87px);
+    top: 0.98px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Form */
+form{
+    position: absolute;
+    height: 270.79px;
+    left: 0.39%;
+    right: -0.39%;
+    top: 80px;
+
+    font-family: 'circular';
+}
+
+.title-div{
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 0px;
+}
+
+.name-div{
+    position: absolute;
+    height: 93.85px;
+    left: 0%;
+    right: 0%;
+    top: calc(93.85px * 1);
+}
+
+.singer-div{
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 100px;
+}
+
+.total-duration-div{
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 200px;
+}
+
+.password-div{    
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 120px;
+}
+
+.image-div{    
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 300px;
+}
+
+.register-submit-form-div{
+    position: absolute;
+    height: 46.92px;
+    left: -29%;
+    right: 29%;
+    top: 800px;  
+}
+
+.submit-form-div{
+    position: absolute;
+    height: 46.92px;
+    left: -29%;
+    right: 29%;
+    top: 240px;    
+}
+
+#input-form{
+    position: absolute;
+    height: 50.84px;
+    left: 0%;
+    right: 0%;
+    top: 27.37px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+#input-form:hover{
+    border: 1px solid black;
+}
+
+#input-form-total-duration{
+    position: absolute;
+    height: 50.84px;
+    left: 0%;
+    right: 0%;
+    top: 27.37px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+#input-form-password:hover{
+    border: 1px solid black;
+}
+
+
+#submit-form{
+    position: absolute;
+    height: 43.92px;
+    left: -12%;
+    right: 0%;
+    top: 350px;
+    width: 300px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.955px;
+    text-transform: uppercase;
+
+    border-radius: 488.8px;
+    border: none;
+    background: rgb(98, 34, 162);
+}
+
+#submit-form:hover{
+    transform: scale(1.05);
+}
+
+#unique_Username{
+    position: absolute;
+    left: 450px;
+    top: 43px;
+    /* right: 25%; */
+}
+
+#unique_Email{
+    position: absolute;
+    left: 450px;
+    top: 34px;
+    /* right: 25%; */
+}
+
+label{
+    font-weight: bold;
+}
+
+.border{
+    position: absolute;
+    height: 1.96px;
+    left: -25%;
+    right: 25%;
+    top: 324px;
+    border: 0.97px solid #D9DADC;
+}
+
+.register-border{
+    position: absolute;
+    height: 1.96px;
+    left: -25%;
+    right: 25%;
+    top: 465px;
+    border: 0.97px solid #D9DADC;
+}
+
+.submit-border{
+    position: absolute;
+    height: 1.96px;
+    left: -0.06%;
+    right: 0.06%;
+    top: 650px;
+
+    border: 0.97px solid #D9DADC;
+}
+
+/* Footer */
+.main-bottom{
+    position: absolute;
+    height: 89.94px;
+    left: 0.39%;
+    right: -0.39%;
+    top: 430.23px;
+}
+
+.submit-main-bottom{
+    position: absolute;
+    height: 89.94px;
+    left: 0.39%;
+    right: -0.39%;
+    top: 700px;
+}
+
+.footer-text{
+    position: absolute;
+    width: 198px;
+    height: 22.48px;
+    left: 7%;
+    top: 330px;
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17.5px;
+    line-height: 23px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.register-footer-text{
+    position: absolute;
+    width: 198px;
+    height: 22.48px;
+    left: 3%;
+    top: 470px;
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17.5px;
+    line-height: 23px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    height: 46.9px;
+    left: -25%;
+    right: 25%;
+    top: 390px;
+
+    border: 1px solid #878787;
+    border-radius: 488.8px;
+
+    background-color: white;
+    font-family: inherit;
+    font-size: 13.6864px;
+    line-height: 20px;
+
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+    color: #6A6A6A;
+}
+
+.footer-button:hover{
+    border: 1px solid black;
+}
+
+.register-footer-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    height: 46.9px;
+    left: -25%;
+    right: 25%;
+    top: 530px;
+
+    border: 1px solid #878787;
+    border-radius: 488.8px;
+
+    background-color: white;
+    font-family: inherit;
+    font-size: 13.6864px;
+    line-height: 20px;
+
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+    color: #6A6A6A;
+}
+
+.register-footer-button:hover{
+    border: 1px solid black;
+}
+
+#unique_Username{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    right: 0%;
+    left: 101%;
+    top: 45%;
+}
+
+#unique_Email{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    right: 0%;
+    left: 101%;
+    top: 45%;
+}
+
+#input-form-title{
+    position: absolute;
+    height: 50.84px;
+    left: 0%;
+    right: 0%;
+    top: 27.37px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+#input-form-title:hover{
+    border: 1px solid black;
+}
+
+#input-form-singer{
+    position: absolute;
+    height: 50.84px;
+    left: 0%;
+    right: 0%;
+    top: 27.37px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+#input-form-singer:hover{
+    border: 1px solid black;
+}
+
+.date-div{
+    position: absolute;
+    height: 93.85px;
+    left: -25%;
+    right: 25%;
+    top: 0px;
+}
+
+#input-form-date{
+    position: absolute;
+    height: 50.84px;
+    left: 0%;
+    right: 0%;
+    top: 27.37px;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+#input-form-date:hover{
+    border: 1px solid black;
+}

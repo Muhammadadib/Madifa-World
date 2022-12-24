@@ -1,0 +1,54 @@
+/* Form */
+form{
+    font-family: 'circular';
+}
+
+#submit-form{
+    height: 43.92px;
+    width: 300px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.955px;
+    text-transform: uppercase;
+
+    border-radius: 488.8px;
+    border: none;
+    background: rgba(165, 30, 228, 0.845);
+    position: static;
+}
+
+#submit-form:hover{
+    transform: scale(1.05);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+}
+
+#album_id {
+    width: 100%;
+}
+
+input[type="file"] {
+    color: white;
+}
+

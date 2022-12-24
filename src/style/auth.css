@@ -1,0 +1,145 @@
+.input-field-div {
+    height: 93.85px;
+}
+
+.input-field {
+    height: 50.84px;
+    width: 100%;
+
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 0.97px #878787;
+    border-radius: 3.91px;
+    border-style:solid;
+    border-width:1.5px;
+    
+    padding: 0 3% 0 3.1%;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 15.6px;
+}
+
+.submit-form-div {
+    height: 46.92px; 
+    display: flex;
+    justify-content: center;
+}
+
+#unique_Username, #unique_Email {
+    color:white;
+}
+
+
+.border{
+    height: 1.96px;
+    border: 0.97px solid #D9DADC;
+    margin: 20px 0;
+}
+
+.footer-text{
+    width: 100%;
+    margin: 20px auto;
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17.5px;
+    line-height: 23px;
+    /* or 133% */
+    text-align: center;
+    color:white
+}
+
+.footer-button{
+    box-sizing: border-box;
+    height: 46.9px;
+    width: 100%;
+
+    border: 1px solid black;
+    border-radius: 488.8px;
+
+    background-color: white;
+    font-family: inherit;
+    font-size: 13.6864px;
+    line-height: 20px;
+
+    letter-spacing: 1.95px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.footer-button:hover{
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.main-container {
+    width: 500px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-text{
+    width: 198px;
+    height: 22.48px;
+
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+    line-height: 23px;
+    /* or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-button:hover{
+    transform: scale(1.05);
+    border: 1px solid gray;
+}
+
+.username-div{
+    height: 93.85px;
+}
+
+.submit-form-div{
+    height: 46.92px;   
+}
+
+.border{
+    height: 1.96px;
+    border: 0.97px solid #D9DADC;
+}
+
+#submit-form{
+    height: 46.92px;
+    padding: 10px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 20px;
+    /* or 143% */
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.955px;
+    text-transform: uppercase;
+
+    border-radius: 488.8px;
+    border: none;
+    background: rgba(188, 30, 228, 0.845)
+}
+
+#submit-form:hover{
+    transform: scale(1.05);
+}
+
+#span{
+    color:white
+}

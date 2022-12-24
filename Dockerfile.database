@@ -1,0 +1,15 @@
+FROM mysql:latest as builder
+
+RUN ["sed", "-i", "s/exec \"$@\"/echo \"not running $@\"/", "/usr/local/bin/docker-entrypoint.sh"]
+
+ENV MYSQL_ROOT_USER=root
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
+ENV MYSQL_DATABASE=madifa-world
+
+COPY database/db.sql /docker-entrypoint-initdb.d/
+
+RUN ["/usr/local/bin/docker-entrypoint.sh", "mysqld", "--datadir", "/initialized-db"]
+
+FROM mysql:latest
+
+COPY --from=builder /initialized-db /var/lib/mysql
