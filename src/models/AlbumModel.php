@@ -248,12 +248,20 @@ class AlbumModel {
     }
 
     public function deleteAlbumFromList($id) {
-        $query = "DELETE FROM " . AlbumModel::$table .
-               " WHERE album_id = :id";
+        
+        $query = "DELETE FROM album WHERE album_id = ".$id."";
 
         $this->db->prepare($query);
 
-        $this->db->bind(':album_id', $id);
+        $this->db->bind(":album_id", $id);
+
+        $this->db->execute();
+
+        $updatequery = "UPDATE song SET album_id = NULL WHERE album_id = ".$id."";
+
+        $this->db->prepare($updatequery);
+
+        $this->db->bind(":album_id", $id);
 
         $this->db->execute();
 

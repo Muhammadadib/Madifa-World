@@ -75,11 +75,21 @@ class AlbumController extends Controller {
     }
 
     // Delete album from database
-    public function deleteAlbum(){
-        $albumModel = new AlbumModel();
-        $albumModel->deleteAlbumFromList($_POST["album_id"]);
+    public function deleteAlbum(int $albumId){
+        $isAdmin = isset($_SESSION["isAdmin"]) ? $_SESSION["isAdmin"] : false;
+        if (!$isAdmin) {
+            http_response_code(403);
+            die();
+        }
 
-        $this->defaultRedirect();
+        $albumModel = new AlbumModel();
+        $album = $albumModel->selectById($albumId);
+
+        if(!$album) $this->redirectTo("/albums");
+
+        $albumModel->deleteAlbumFromList($albumId);
+
+        $this->redirectTo("/");
     }
 
     // Update album from database
@@ -105,10 +115,18 @@ class AlbumController extends Controller {
 
         if (!$album) $this->defaultRedirect();
         
-        $this->view("album/detail", [
-            "album" => $album,
-            "songs" => $songs
-        ]);
+        $isAdmin = isset($_SESSION["isAdmin"]) ? $_SESSION["isAdmin"] : false;
+        if($isAdmin){
+            $this->view("admin/albumDetail", [
+                "album" => $album,
+                "songs" => $songs
+            ]);    
+        }else{
+            $this->view("album/detail", [
+                "album" => $album,
+                "songs" => $songs
+            ]);
+        }
     }
 
     public function showAlbums(){

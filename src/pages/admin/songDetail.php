@@ -52,18 +52,21 @@
             Genre: <input type="text" name="genre" value="<?php echo $data["song"]["genre"]?>">
             <br>
             Duration: <?php echo $data["song"]["duration"]?>s
-            <input type="file" name="image">
             <br>
-            <input type="file" name="audio">
+            Image: <input type="file" name="image">
+            <br>
+            Audio: <input type="file" name="audio">
             <br>
             <button type="submit">Update</button>
-        </form>
-
-
-        <form method="POST" action="/songs/<?php echo $data["song"]["song_id"]?>">
             <input type="text" name="_method" value="DELETE" hidden>
             <button type="submit">Delete</button>
         </form>
+
+
+        <!-- <form method="POST" action="/songs/<?php echo $data["song"]["song_id"]?>">
+            <input type="text" name="_method" value="DELETE" hidden>
+            <button type="submit">Delete</button>
+        </form> -->
     </div>
     </div>
     </div>

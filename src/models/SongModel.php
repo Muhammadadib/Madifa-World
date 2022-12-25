@@ -386,8 +386,8 @@ class SongModel {
 
         if (!$songData) return false;
 
-        unlink("./storage/" . $songData["image_path"]);
-        unlink("./storage/" . $songData["audio_path"]);
+        // unlink("./storage/" . $songData["image_path"]);
+        // unlink("./storage/" . $songData["audio_path"]);
 
         $deleteQuery = "DELETE FROM song WHERE song_id = :id";
 
