@@ -21,7 +21,8 @@
     ?>
     
     <div class="contents">
-    <h1>Detail of song with id <?php echo $data["song"]["song_id"]?></h1>
+    <h1>Edit song with id <?php echo $data["song"]["song_id"]?></h1>
+    <br>
     <div class="main-container">
     <div class="details-admin">
         <img src="/storage/<?php echo $data["song"]["image_path"]?>">

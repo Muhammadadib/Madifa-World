@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(98, 34, 162);
-    font-family: 'Gotham';
-}
-
 nav {
     position:fixed;
     top: 0;
@@ -26,8 +19,8 @@ nav {
 body{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(#8c33bc, #101010);
-    background-color: rgb(98, 34, 162);
+    /* background: linear-gradient(#8c33bc, #101010); */
+    background-color: rgb(121, 34, 162);
     font-family: 'Gotham';
 }
 
@@ -212,10 +205,15 @@ header {
 }
 
 .details img{
-    width: 93%;
-    height: 90%;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.imageAlbum img{
+    width: 450px;
+    height: 450px;
 }
 
 /* Create two equal columns that sits next to each other */

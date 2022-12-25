@@ -21,6 +21,7 @@
     ?>
 
     <div class="contents">
+        <h1>Detail Album</h1>
         <div class="main-container">
         <div class="details">
         <h1><?php echo $data["album"]["judul"]?></h1>
@@ -39,14 +40,17 @@
             ?>
         </p>
         <p>
+            <h2>
             List of songs: 
-            <br>
+            </h2>
             <?php
                 $no = 1;
                 foreach ($data["songs"] as $song) {
+                    echo '<a href="/songs/' . (string)$song["song_id"] . '">';
+                    echo '<h2>';
                     echo $no . ". ";
                     echo $song["judul"];
-                    echo "<br>";
+                    echo '</h2>';
                     $no++;
                 }
             ?>
